@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="API_Test_Project" tests="15" skipped="0" failures="0" errors="0" timestamp="2020-08-31T23:57:55" hostname="LAPTOP-SA9HGMUU" time="13.304">
+  <properties/>
+  <testcase name="t01_get_token_fail" classname="API_Test_Project" time="3.382"/>
+  <testcase name="t02_get_token_correct" classname="API_Test_Project" time="1.602"/>
+  <testcase name="t03_create_user_fail" classname="API_Test_Project" time="0.399"/>
+  <testcase name="t04_create_user" classname="API_Test_Project" time="1.738"/>
+  <testcase name="t05_update_phone_number" classname="API_Test_Project" time="0.88"/>
+  <testcase name="t06_add_new_add_fail" classname="API_Test_Project" time="0.368"/>
+  <testcase name="t07_add_new_add" classname="API_Test_Project" time="1.13"/>
+  <testcase name="t08_update_add" classname="API_Test_Project" time="0.851"/>
+  <testcase name="t09_get_address_fail" classname="API_Test_Project" time="0.273"/>
+  <testcase name="t10_user_has_no_address" classname="API_Test_Project" time="0.472"/>
+  <testcase name="t11_update_user_address" classname="API_Test_Project" time="0.493"/>
+  <testcase name="t12_update_user_address_duplicated" classname="API_Test_Project" time="0.4"/>
+  <testcase name="t13_get_created_address" classname="API_Test_Project" time="0.403"/>
+  <testcase name="t14_shop_not_found" classname="API_Test_Project" time="0.327"/>
+  <testcase name="t15_delete_ad" classname="API_Test_Project" time="0.585"/>
+  <system-out><![CDATA[Request method:	POST
+Request URI:	https://webapi.segundamano.mx/nga/api/v1.1/private/accounts
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Status expected: 400
+Result: 400
+Error Code expected: VALIDATION FAILED 
+Result: VALIDATION_FAILED
+Request method:	POST
+Request URI:	https://webapi.segundamano.mx/nga/api/v1.1/private/accounts
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Basic YWxiZXJ0by5lZGxpcmFAZ21haWwuY29tOjU0MzIx
+				Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Status expected: 200
+Result: 200
+Request method:	POST
+Request URI:	https://webapi.segundamano.mx/nga/api/v1.1/private/accounts
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "account": {
+        "email": "agente6671.0@mailinator.com"
+    }
+}
+Status expected: 400
+Result: 400
+VALIDATION_FAILED
+Request method:	POST
+Request URI:	https://webapi.segundamano.mx/nga/api/v1.1/private/accounts?lang=es
+Proxy:			<none>
+Request params:	<none>
+Query params:	lang=es
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Basic YWxiZXJ0by5lZGxpcmFAZ21haWwuY29tOjU0MzIx
+				Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+mc1xa057e21f429f23b009806434dfa2e9307601bf55_v2
+account Id: 10806031
+Name: ventas uno
+UUID :9ed810ca-aa11-4c35-84ed-effdca021a59
+User??10806031
+OWVkODEwY2EtYWExMS00YzM1LTg0ZWQtZWZmZGNhMDIxYTU5Om1jMXhhMDU3ZTIxZjQyOWYyM2IwMDk4MDY0MzRkZmEyZTkzMDc2MDFiZjU1X3Yy
+Status expected: 200
+Result: 200
+Token: mc1xa057e21f429f23b009806434dfa2e9307601bf55_v2
+Request method:	PATCH
+Request URI:	https://webapi.segundamano.mx/nga/api/v1/private/accounts/10806031
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=tag:scmcoord.com,2013:api mc1xa057e21f429f23b009806434dfa2e9307601bf55_v2
+				Accept=application/json, text/plain, */*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "account": {
+        "name": "ventas uno",
+        "phone": "1099401339",
+        "phone_hidden": true
+    }
+}
+Status expected: 200
+Result: 200
+Request method:	POST
+Request URI:	https://webapi.segundamano.mx/nga/api/v1/private/accounts/10806031
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=tag:scmcoord.com,2013:api fake
+				x-nga-source=PHOENIX_DESKTOP
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "account": {
+        "name": "ventas uno",
+        "phone": "1076529721",
+        "locations": [
+            {
+                "code": "3",
+                "key": "region",
+                "label": "Aguascalientes",
+                "locations": [
+                    {
+                        "code": "35",
+                        "key": "municipality",
+                        "label": "Aguascalientes"
+                    }
+                ]
+            }
+        ],
+        "professional": false,
+        "phone_hidden": true
+    }
+}
+Status expected: 401
+Result: 401
+Error Code expected: UNAUTHORIZED 
+Result: UNAUTHORIZED
+Request method:	PATCH
+Request URI:	https://webapi.segundamano.mx/nga/api/v1/private/accounts/10806031
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=tag:scmcoord.com,2013:api mc1xa057e21f429f23b009806434dfa2e9307601bf55_v2
+				x-nga-source=PHOENIX_DESKTOP
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "account": {
+        "name": "ventas uno",
+        "phone": "1076529721",
+        "locations": [
+            {
+                "code": "3",
+                "key": "region",
+                "label": "Aguascalientes",
+                "locations": [
+                    {
+                        "code": "35",
+                        "key": "municipality",
+                        "label": "Aguascalientes"
+                    }
+                ]
+            }
+        ],
+        "professional": false,
+        "phone_hidden": true
+    }
+}
+Body: {"account":{"account_id":"/private/accounts/10806031","can_publish":true,"email":"alberto.edlira@gmail.com","locations":[{"code":"3","key":"region","label":"Aguascalientes","locations":[{"code":"35","key":"municipality","label":"Aguascalientes"}]}],"name":"ventas uno","phone":"1076529721","phone_hidden":true,"professional":false,"rfc":"CASA681225XXX","uuid":"9ed810ca-aa11-4c35-84ed-effdca021a59"}}
+Status expected: 200
+Result: 200
+Action expected to be: new 
+Result: null
+Ad Created with id: 9ed810ca-aa11-4c35-84ed-effdca021a59
+Request method:	PATCH
+Request URI:	https://webapi.segundamano.mx/nga/api/v1/private/accounts/10806031
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=tag:scmcoord.com,2013:api mc1xa057e21f429f23b009806434dfa2e9307601bf55_v2
+				x-nga-source=PHOENIX_DESKTOP
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "account": {
+        "name": "ventas uno",
+        "phone": "1076529721",
+        "locations": [
+            {
+                "code": "3",
+                "key": "region",
+                "label": "Aguascalientes",
+                "locations": [
+                    {
+                        "code": "37",
+                        "key": "municipality",
+                        "label": "Calvillo"
+                    }
+                ]
+            }
+        ],
+        "professional": false,
+        "phone_hidden": true
+    }
+}
+Status expected: 200
+Result: 200
+Action expected to be: edit 
+Result: null
+contains: [[[code:37, key:municipality, label:Calvillo]]]
+Request method:	GET
+Request URI:	https://webapi.segundamano.mx/addresses/v1/get
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Basic mc1xa057e21f429f23b009806434dfa2e9307601bf55_v2
+				Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Status expected: 403
+Result: 403
+Error Code expected: Authorization failed 
+Result: Authorization failed
+WARNING For this test verify User address is empty since there is not method to delete multiple addresses yet
+Request method:	GET
+Request URI:	https://webapi.segundamano.mx/addresses/v1/get
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Basic OWVkODEwY2EtYWExMS00YzM1LTg0ZWQtZWZmZGNhMDIxYTU5Om1jMXhhMDU3ZTIxZjQyOWYyM2IwMDk4MDY0MzRkZmEyZTkzMDc2MDFiZjU1X3Yy
+				Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Status expected: 200
+Result: 200
+List expected to be empty 
+Result: [:]
+WARNING this action is adding more than 1 address
+Request method:	POST
+Request URI:	https://webapi.segundamano.mx/addresses/v1/create
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	contact=Casa grande
+				phone=3234445555
+				rfc=CASA681225XXX
+				zipCode=45050
+				exteriorInfo=exterior 10
+				region=5
+				municipality=51
+				alias=big house
+Path params:	<none>
+Headers:		Authorization=Basic OWVkODEwY2EtYWExMS00YzM1LTg0ZWQtZWZmZGNhMDIxYTU5Om1jMXhhMDU3ZTIxZjQyOWYyM2IwMDk4MDY0MzRkZmEyZTkzMDc2MDFiZjU1X3Yy
+				Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Body addres: {"addressID":"0fb8f60a-ebdc-11ea-b029-9fd30d2a61cb"}
+Status expected: 201
+Result: 201
+Address created with ID: 0fb8f60a-ebdc-11ea-b029-9fd30d2a61cb
+WARNING this action is adding more than 1 address
+Request method:	POST
+Request URI:	https://webapi.segundamano.mx/addresses/v1/create
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	contact=Casa grande
+				phone=3234445555
+				rfc=CASA681225XXX
+				zipCode=45050
+				exteriorInfo=exterior 10
+				region=5
+				municipality=51
+				alias=big house
+Path params:	<none>
+Headers:		Authorization=Basic OWVkODEwY2EtYWExMS00YzM1LTg0ZWQtZWZmZGNhMDIxYTU5Om1jMXhhMDU3ZTIxZjQyOWYyM2IwMDk4MDY0MzRkZmEyZTkzMDc2MDFiZjU1X3Yy
+				Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Status expected: 201
+Result: 201
+Request expected to return duplicate 
+Result: null
+Request method:	GET
+Request URI:	https://webapi.segundamano.mx/addresses/v1/get/0fb8f60a-ebdc-11ea-b029-9fd30d2a61cb
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Basic OWVkODEwY2EtYWExMS00YzM1LTg0ZWQtZWZmZGNhMDIxYTU5Om1jMXhhMDU3ZTIxZjQyOWYyM2IwMDk4MDY0MzRkZmEyZTkzMDc2MDFiZjU1X3Yy
+				Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Status expected: 200
+Result: 200
+Request expected to contain addressID: [0fb8f60a-ebdc-11ea-b029-9fd30d2a61cb:[exteriorInfo:exterior 10, interiorInfo:, region:5, municipality:51, area:0, alias:big house, contact:Casa grande, phone:3234445555, zipCode:45050]]
+Request method:	GET
+Request URI:	https://webapi.segundamano.mx/shops/api/v2/public/accounts/10613126/shop
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Status expected: 404
+Result: 404
+Error Code expected: Account not found 
+Result: Account not found
+Request method:	DELETE
+Request URI:	https://webapi.segundamano.mx/nga/api/v1/delete/0fb8f60a-ebdc-11ea-b029-9fd30d2a61cb
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=tag:scmcoord.com,2013:api mc1xa057e21f429f23b009806434dfa2e9307601bf55_v2
+				x-nga-source=PHOENIX_DESKTOP
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Status expected: 200
+Result: 403
+Action expected to be: delete 
+Result: null
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
